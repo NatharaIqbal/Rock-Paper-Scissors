@@ -1,5 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #555;
 }
 
 .options {
@@ -7,7 +25,39 @@
 }
 
 button {
-    margin: 0 10px;
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.rock { background-color: #f44336; }
+.paper { background-color: #2196F3; }
+.scissors { background-color: #ff9800; }
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls button {
+    margin: 10px;
     padding: 10px 20px;
     font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.controls button:hover {
+    background-color: #555;
 }
