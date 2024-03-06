@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,11 +10,15 @@
         <h1>Rock Paper Scissors</h1>
         <div id="result">Choose an option:</div>
         <div class="options">
-            <button onclick="play('rock')">Rock</button>
-            <button onclick="play('paper')">Paper</button>
-            <button onclick="play('scissors')">Scissors</button>
+            <button onclick="play('rock')" class="rock">Rock</button>
+            <button onclick="play('paper')" class="paper">Paper</button>
+            <button onclick="play('scissors')" class="scissors">Scissors</button>
+        </div>
+        <div id="timer">Time left: <span id="time">10</span> seconds</div>
+        <div class="controls">
+            <button onclick="restart()">Restart</button>
+            <button onclick="quit()">Quit</button>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
-</html>
