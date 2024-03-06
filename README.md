@@ -47,3 +47,12 @@ You can customize the game further by modifying the HTML, CSS, and JavaScript fi
 ## Contributing
 
 If you have any ideas for improvements or new features, feel free to contribute! Fork this repository, make your changes, and submit a pull request.
+
+## Development Environment
+
+The game was developed using [CodePen](https://codepen.io/), an online code editor for front-end development. Below is the link to the CodePen project where the game was coded:
+
+- [Rock Paper Scissors Game on CodePen](https://codepen.io/Nathara-Nasreen-Iqbal/pen/QWPjjgz)
+
+![Rock-Paper-Scissors](https://github.com/NatharaIqbal/Rock-Paper-Scissors/assets/138295014/3648be58-cf01-4a7f-ad1c-a9e9ea6ae29e)
+
