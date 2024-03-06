@@ -1,3 +1,6 @@
+let timer;
+let timeLeft = 10;
+
 function play(playerChoice) {
     const choices = ["rock", "paper", "scissors"];
     const computerChoice = choices[Math.floor(Math.random() * choices.length)];
@@ -18,3 +21,28 @@ function play(playerChoice) {
 
     document.getElementById("result").innerText = `You chose ${playerChoice}, computer chose ${computerChoice}. ${result}`;
 }
+
+function restart() {
+    clearInterval(timer);
+    timeLeft = 10;
+    document.getElementById("time").innerText = timeLeft;
+    timer = setInterval(updateTimer, 1000);
+}
+
+function quit() {
+    clearInterval(timer);
+    document.getElementById("result").innerText = "Game over!";
+}
+
+function updateTimer() {
+    timeLeft--;
+    if (timeLeft <= 0) {
+        clearInterval(timer);
+        document.getElementById("result").innerText = "Time's up!";
+    } else {
+        document.getElementById("time").innerText = timeLeft;
+    }
+}
+
+// Start the initial timer
+timer = setInterval(updateTimer, 1000);
